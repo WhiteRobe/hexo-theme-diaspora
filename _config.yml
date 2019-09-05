@@ -1,19 +1,23 @@
 # 头部菜单，title: link
 menu:
   Whoami: /whoami
-  Github: https://github.com/Fechin
-  Twitter: https://twitter.com/FechinLi
+  Github: https://github.com/WhiteRobe
+  CSDN: https://blog.csdn.net/Shenpibaipao
+  分类: /categories
+  归档: /archives
+  标签云: /tags
 
 # 是否显示目录
-TOC: false
+TOC: true
 
 # 是否自动播放音乐
-autoplay: false
+autoplay: true
 
 # 默认音乐
 mp3: 
-  - http://link.hhtjim.com/163/5146554.mp3
-  - http://link.hhtjim.com/qq/001faIUs4M2zna.mp3
+  - https://raw.githubusercontent.com/WhiteRobe/hexo-theme-diaspora/master/source/audio/jinyecheng.mp3
+  - https://raw.githubusercontent.com/WhiteRobe/hexo-theme-diaspora/master/source/audio/juhuatai.mp3
+  - https://raw.githubusercontent.com/WhiteRobe/hexo-theme-diaspora/master/source/audio/MapleStory.mp3
 
 # 首页封面图, 为空时取文章的cover作为封面
 welcome_cover: # /img/welcome-cover.jpg
@@ -27,7 +31,7 @@ scrollbar: true
 # Gitalk 评论插件（https://github.com/gitalk/gitalk）
 gitalk:
     # 是否自动展开评论框
-    autoExpand: false
+    autoExpand: true
     # 应用编号
     clientID: ''
     # 应用秘钥
@@ -44,7 +48,7 @@ gitalk:
     distractionFreeMode: false
 
 # 网站关键字
-keywords: Fechin
+keywords: WhiteRobe, Blog
 
 # 要使用google_analytics进行统计的话，这里需要配置ID
 google_analytics: 
