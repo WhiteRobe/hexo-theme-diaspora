@@ -1,5 +1,6 @@
 # Hexo-theme-diaspora
 
+> 修改/Fork自[Fechin/hexo-theme-diaspora](https://github.com/Fechin/hexo-theme-diaspora)，在此基础上做了我的修改。
 
 **[在线预览 | PREVIEW ](http://fech.in)**
 
