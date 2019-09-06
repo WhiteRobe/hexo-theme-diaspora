@@ -88,7 +88,7 @@ body.mu .nav {top:0;}
 body.mu .icon-logo {color:#333;}
 .menu {text-align:center;margin-top:200px;}
 .menu li {font-size:18px;display:inline-block;margin:0 20px 20px 0;}
-.menu a {color:#666;letter-spacing:1px;}
+.menu a {color:#666;letter-spacing:1px;background: rgba(0,0,0,.07);border: 1px; border-radius: 10px; padding: 5px 10px;}
 .menu a:hover {color:#333;}
 .nav p {color:#999;font-size:12px;position:absolute;width:100%;text-align:center;bottom:30px;}
 .nav p a {color:#999;text-decoration:underline;}
@@ -98,6 +98,7 @@ body.mu .icon-logo {color:#333;}
 .set a {display:inline-block;position:relative;color:#424242;padding:5px 5px}
 .set a::before {content:"";position:absolute;width:0;right:0;bottom:0;height:2px;background:#2196F3}
 .set a:hover {color:#2196F3!important}
+.set .all {letter-spacing: 1.5rem;border-radius: 10px; background: rgba(0,0,0,.07);line-height: 1.5rem;display: block;text-align: center;font-size:1rem;font-weight:800}
 .set .category-list-item,.set .tag-list-item {display:inline-block;font-size:17px;text-align:left}
 .set .category-list-item .category-list-count,.set .category-list-item .tag-list-count,.set .tag-list-item .category-list-count,.set .tag-list-item .tag-list-count {color:#9E9E9E;font-style:normal}
 .set .category-list-item .category-list-count::before,.set .category-list-item .tag-list-count::before,.set .tag-list-item .category-list-count::before,.set .tag-list-item .tag-list-count::before {content:"["}
@@ -294,7 +295,7 @@ pre .keyword,pre .javascript .function {color:#cc99cc;}
   #pager {margin:30px 0 0;}
   h1.title {font-size:24px;}
   .tab {display:none;}
-  .icon-scan {display:none!important;}
+  /*.icon-scan {display:none!important;}*/
   .icon-images {left:80px;}
   .icon-pause,.icon-play {left:50px;}
   .comment.link {width:140px;padding:5px 0;}

@@ -35,6 +35,7 @@ var description = '';
     <% if (theme.rss){ %><link rel="alternative" href="<%- theme.rss %>" title="<%= config.title %>" type="application/atom+xml"> <% } %>
     <% if (theme.favicon){ %><link rel="icon" href="<%- url_for(theme.favicon) %>"> <% } %>
     <%- css(['//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css'])%>
+    <%- css(['css/animate.css'])%>
     <%- css(['css/fira_code.css'])%>
     <%- css(['css/diaspora.css'])%>
     <!-- <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
