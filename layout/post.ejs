@@ -1,6 +1,10 @@
 <div id="single">
     <%- partial("_partial/post/header")%>
-    <div class="section">
+    <div class="section" style="margin-top: 50px">
         <%- partial("_partial/post/article")%>
+    </div>
+    <!--下悬浮返回键-->
+    <div style="background: white; height:30px; width: 30px; border-radius: 16px; position: fixed; bottom: 1.5rem; right: 1.5rem; border: 2px solid rgba(0, 0, 0, 0.5)">
+      <a class="icon-left image-icon" style="left:4px; top:4px" href="javascript:history.back()"></a>
     </div>
 </div>
