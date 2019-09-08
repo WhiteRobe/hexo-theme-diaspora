@@ -206,6 +206,7 @@ h1.title {font-size:30px;color:#333;line-height:1.3;position:relative;font-weigh
 .footnotes-sep {border-top:3px dashed rgba(102,128,153,0.2) !important}
 .footnote-item p {color: grey; font-style: italic;}
 .content p {margin:0 0 .8em;}
+.content > p {text-indent:1em;}
 .content em {margin:0 5px 0 0;}
 .content s {color: grey;text-decoration-color:black;}
 .content ul,.content ol {margin:10px 0;padding-left:20px;}
