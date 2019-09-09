@@ -63,6 +63,7 @@ tags:
     - 标签1
     - 标签2
 mp3: http://example.com/example.mp3
+autoplay: false
 cover: http://example.com/example.jpg
 description: 'description(不超过60字)'
 ---
