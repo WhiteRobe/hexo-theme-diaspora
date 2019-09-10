@@ -247,7 +247,8 @@ pre .string,pre .value,pre .inheritance,pre .header,pre .ruby .symbol,pre .xml .
 pre .css .hexcolor {color:#66cccc;}
 pre .function,pre .python .decorator,pre .python .title,pre .ruby .function .title,pre .ruby .title .keyword,pre .perl .sub,pre .javascript .title,pre .coffeescript .title {color:#6699cc;}
 pre .keyword,pre .javascript .function {color:#cc99cc;}
-
+.busuanzi_page{color:#666;font-size:13px;}
+.busuanzi_page span{margin: auto 3px;}
 /* Responsive style */
 @media screen and (max-width:1250px) {
   .article .main{width:94%;}
