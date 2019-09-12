@@ -3,7 +3,7 @@
         <h1 class="title"><%- page.title %></h1>
         <div class="stuff">
             <span><%- page.date.locale("zh-cn").format("MMMM DD, YYYY") %></span>
-            <span id="busuanzi_container_page_pv" class="busuanzi_page">本文总阅读量<span id="busuanzi_value_page_pv"></span>次</span>
+            <span id="busuanzi_container_page_pv" class="busuanzi_page" style="display:none">本文总阅读量<div id="busuanzi_value_page_pv" style="display: inline;">1</div>次</span>
             <%- partial('_partial/post/tag', {post: page}) %>
         </div>
         <div class="content markdown">
