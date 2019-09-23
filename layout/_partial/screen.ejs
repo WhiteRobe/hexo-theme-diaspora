@@ -1,4 +1,19 @@
-<% var first = page.posts.sort("date", "desc").eq(0); %>
+<% 
+  /*let sortedList = page.posts.sort("date", "desc");
+  var first = sortedList.eq(0);
+  for(let i=0; i<page.posts.count(); i++){
+    first = sortedList.eq(i);
+    if(first.title){ // is a post
+      break;
+    }
+  }*/
+%>
+<% 
+  let sortedList = page.posts.sort("date", "desc").filter(function(post){
+    return post.title;
+  });
+  first = sortedList.eq(0);
+%>
 <div id="screen">
     <div id="mark">
         <div class="layer" data-depth="0.4">

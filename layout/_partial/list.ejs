@@ -1,8 +1,13 @@
 <%
-    page.posts.sort("date", "desc").each(function(post, i){
+  let sortedList = page.posts.sort("date", "desc").filter(function(post){
+    return post.title;
+  });
+  sortedList.each(function(post, i){
     if (page.prev == 0 && i < start) {
         return true;
     }
 %>
 <%- partial('post/item', {post: post}) %>
-<% }) %>
+<% 
+  }) 
+%>

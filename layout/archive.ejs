@@ -12,6 +12,7 @@
                       <% for(let i = 0, year = -1; i < posts.data.length; ++i) { %>
                         <%
                           const psg = posts.data[i];
+                          if(!psg.title) continue; // is not a post
                           if(psg.date.year() !== year) {
                             year = psg.date.year();
                         %>
