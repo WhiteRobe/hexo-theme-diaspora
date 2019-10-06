@@ -6,6 +6,29 @@
         </li>
         <%}%>
     </ul>
+
+    <!--站内检索框-->
+    <% if (theme.algoliaKey != undefined && theme.algoliaApp != undefined && theme.algoliaIndice != undefined){ %>
+        <div id="algolia-search" 
+            data-k='<%=theme.algoliaKey%>' 
+            data-a='<%=theme.algoliaApp%>'
+            data-i='<%=theme.algoliaIndice%>'
+        >
+            <div id="search-box"></div>
+            <div id="hits"></div>
+            <div id="pagination"></div>
+        </div>
+        <script type="text/html" id="hit-template">
+            <div class="hit">
+                <!-- <span class="hit-name"> 
+                    {{#helpers.highlight}}{ "attribute": "title" }{{/helpers.highlight}}
+                </span> -->
+            </div>
+        </script>
+        <script src="/js/algolia.js"></script>
+    <% } %>
+
+
     <p id="copyright">
         &copy; <%= date(new Date(), 'YYYY') %> <%= config.author || config.title %>.
         Powered by <%- link_to("http://hexo.io/", "Hexo", {external: true})%>.

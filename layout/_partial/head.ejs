@@ -38,7 +38,13 @@ var description = '';
     <%- css(['css/animate.css'])%>
     <%- css(['css/fira_code.css'])%>
     <%- css(['css/diaspora.css'])%>
-    <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>       
+    <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    <% if (theme.algoliaKey != undefined && theme.algoliaApp != undefined && theme.algoliaIndice != undefined){ %>
+        <!--站内搜索API-->
+        <script src="https://cdn.jsdelivr.net/algoliasearch/3/algoliasearch.min.js"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/instantsearch.css@7.3.1/themes/algolia-min.css" integrity="sha256-HB49n/BZjuqiCtQQf49OdZn63XuKFaxcIHWf0HNKte8=" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/instantsearch.js@3.4.0/dist/instantsearch.production.min.js" integrity="sha256-pM0n88cBFRHpSn0N26ETsQdwpA7WAXJDvkHeCLh3ujI=" crossorigin="anonymous"></script>
+    <% } %>
     <!-- <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
     <script>
           // No more ads!

@@ -13,6 +13,11 @@ TOC: true
 # 是否自动播放音乐
 autoplay: true
 
+# 站内检索API
+algoliaApp:
+algoliaKey:
+algoliaIndice:
+
 # 默认音乐
 mp3: 
   - https://raw.githubusercontent.com/WhiteRobe/hexo-theme-diaspora/master/source/audio/jinyecheng.mp3

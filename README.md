@@ -63,7 +63,6 @@ tags:
     - 标签1
     - 标签2
 mp3: http://example.com/example.mp3
-autoplay: false
 cover: http://example.com/example.jpg
 description: 'description(不超过60字)'
 ---
@@ -100,6 +99,20 @@ type: "tags"
 ```
 主题将自动为这个页面显示所有标签。
 
+### 启用站内搜索注意事项
+
+需要配置相关的Aloglia账号，并更新你的索引，索引格式的样例为：
+
+```json
+{
+    "title": "好用又好看的终端——Terminus",
+    "url": "/2019/10/05/zh/terminus-intro/",
+    "keys":" 软件推荐"
+}
+```
+
+
+
 
 ## 主题配置 Theme Configure
 ```yml
@@ -115,6 +128,11 @@ TOC: false
 
 # 是否自动播放音乐
 autoplay: false
+
+# 站内检索API，使用了algolia的服务
+algoliaApp: '$APPKEY'
+algoliaKey: '$SEARCHKEY'
+algoliaIndice: '$INDICE'
 
 # 默认音乐（随机播放）
 mp3: 
